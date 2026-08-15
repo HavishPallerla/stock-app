@@ -1,0 +1,58 @@
+[
+  {
+    "external_id": "mock-001",
+    "source_account": "Reuters Business",
+    "title": "Apple beats Q3 estimates as iPhone revenue jumps 12%",
+    "content": "Apple Inc (AAPL) reported quarterly revenue well above analyst expectations, driven by stronger-than-expected iPhone sales in China and record services revenue.",
+    "url": "https://example.com/news/mock-001"
+  },
+  {
+    "external_id": "mock-002",
+    "source_account": "MarketWatch",
+    "title": "Tesla shares slide after another round of price cuts",
+    "content": "Tesla (TSLA) cut prices on its Model Y and Model 3 lineups for the third time this quarter, fueling investor concern about eroding margins amid slowing demand.",
+    "url": "https://example.com/news/mock-002"
+  },
+  {
+    "external_id": "mock-003",
+    "source_account": "Benzinga",
+    "title": "Nvidia unveils next-gen AI chip, analysts raise price targets",
+    "content": "Nvidia (NVDA) announced its next-generation data center GPU at a developer conference, prompting several Wall Street analysts to raise price targets citing accelerating AI infrastructure demand.",
+    "url": "https://example.com/news/mock-003"
+  },
+  {
+    "external_id": "mock-004",
+    "source_account": "Yahoo Finance",
+    "title": "Microsoft, Amazon cloud growth slows in latest quarter",
+    "content": "Both Microsoft (MSFT) Azure and Amazon (AMZN) AWS reported cloud revenue growth below prior guidance, raising questions about enterprise IT spending in the current macro environment.",
+    "url": "https://example.com/news/mock-004"
+  },
+  {
+    "external_id": "mock-005",
+    "source_account": "Business Wire",
+    "title": "Boeing faces fresh delivery delays after supplier quality issue",
+    "content": "Boeing (BA) said it will pause deliveries of a key 737 MAX variant after identifying a quality issue at a key fuselage supplier, extending an already difficult stretch for the plane maker.",
+    "url": "https://example.com/news/mock-005"
+  },
+  {
+    "external_id": "mock-006",
+    "source_account": "Reuters Business",
+    "title": "Coca-Cola reaffirms full-year guidance, in line with expectations",
+    "content": "Coca-Cola (KO) reported quarterly results broadly in line with consensus and reaffirmed its full-year outlook, with management citing steady demand across most international markets.",
+    "url": "https://example.com/news/mock-006"
+  },
+  {
+    "external_id": "mock-007",
+    "source_account": "MarketWatch",
+    "title": "Meta shares jump on ad revenue beat and cost discipline",
+    "content": "Meta Platforms (META) posted better-than-expected advertising revenue and signaled continued cost discipline, sending shares sharply higher in after-hours trading.",
+    "url": "https://example.com/news/mock-007"
+  },
+  {
+    "external_id": "mock-008",
+    "source_account": "Benzinga",
+    "title": "Intel shares fall on weak foundry outlook",
+    "content": "Intel (INTC) shares dropped after the company issued a disappointing revenue forecast for its foundry business, adding to concerns about its turnaround timeline against rivals like Nvidia and AMD.",
+    "url": "https://example.com/news/mock-008"
+  }
+]

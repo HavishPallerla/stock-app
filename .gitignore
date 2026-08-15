@@ -1,0 +1,18 @@
+# Env files (never commit real secrets)
+.env
+.env.local
+**/.env
+**/.env.local
+
+# Node
+node_modules/
+dist/
+frontend/dist/
+
+# Go
+backend-go/worker
+backend-go/*.exe
+
+# OS / editor
+.DS_Store
+*.log
