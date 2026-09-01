@@ -1,13 +1,14 @@
 import { Router } from 'express';
 import { supabaseAdmin } from '../lib/supabaseAdmin.js';
 import { requireAuth } from '../middleware/auth.js';
+import { asyncHandler } from '../lib/asyncHandler.js';
 
 const router = Router();
 router.use(requireAuth);
 
 const VALID_SIGNALS = new Set(['buy', 'sell', 'hold']);
 
-router.get('/', async (req, res) => {
+router.get('/', asyncHandler(async (req, res) => {
   const { data, error } = await supabaseAdmin
     .from('alert_preferences')
     .select('sms_enabled, signal_types, updated_at')
@@ -19,9 +20,9 @@ router.get('/', async (req, res) => {
   res.json({
     preferences: data ?? { sms_enabled: false, signal_types: ['buy', 'sell', 'hold'] },
   });
-});
+}));
 
-router.put('/', async (req, res) => {
+router.put('/', asyncHandler(async (req, res) => {
   const { sms_enabled, signal_types } = req.body ?? {};
 
   if (typeof sms_enabled !== 'boolean') {
@@ -46,6 +47,6 @@ router.put('/', async (req, res) => {
 
   if (error) return res.status(500).json({ error: error.message });
   res.json({ preferences: data });
-});
+}));
 
 export default router;

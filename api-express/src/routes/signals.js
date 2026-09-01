@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { supabaseAdmin } from '../lib/supabaseAdmin.js';
 import { requireAuth } from '../middleware/auth.js';
+import { asyncHandler } from '../lib/asyncHandler.js';
 
 const router = Router();
 router.use(requireAuth);
@@ -9,7 +10,7 @@ const VALID_SIGNALS = new Set(['buy', 'sell', 'hold']);
 const MAX_LIMIT = 100;
 
 // Recent signals for the dashboard's live feed / history view.
-router.get('/', async (req, res) => {
+router.get('/', asyncHandler(async (req, res) => {
   const limit = Math.min(Number(req.query.limit) || 50, MAX_LIMIT);
 
   let query = supabaseAdmin
@@ -34,6 +35,6 @@ router.get('/', async (req, res) => {
   const { data, error } = await query;
   if (error) return res.status(500).json({ error: error.message });
   res.json({ signals: data });
-});
+}));
 
 export default router;
