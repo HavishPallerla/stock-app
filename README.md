@@ -1,5 +1,7 @@
 # stock-app
 
+![Stock App screenshot](frontend/public/diagram.png)
+
 Real-time stock alerts: scrapes financial news RSS feeds, runs each item through Claude for a
 buy/sell/hold trading signal, and delivers matches to users via SMS (Twilio) and a live web
 dashboard.
